@@ -14,6 +14,23 @@ body {
   margin-top: -1px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+}
+
 :root {
   --accent-color: #2196f3;
   --color-logo-bl: #000000;
@@ -24,12 +41,37 @@ body {
   --background-wh: #f5f4fa;
 }
 
+header {
+  background-color: rgb(201, 160, 199);
+}
+
+.container {
+  width: 1200px;
+  outline: solid rebeccapurple;
+  display: flex;
+  padding: 0 15px;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+}
+
 .logo {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  outline: solid 1px tomato;
 }
 
 .logo-bl {
@@ -41,22 +83,35 @@ body {
 }
 
 .site-navigatioin {
-  list-style: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  outline: tomato solid 1px;
+  display: flex;
+  align-items: center;
+}
+
+.site-nav-item {
+  outline: tomato 1px solid;
 }
 
 .link-studio,
 .link-portfolio,
 .link-contacts {
   color: var(--color-title);
+  padding: 32px 0;
+  display: block;
 }
 
 .list {
   list-style: none;
   text-decoration: none;
+}
+
+.mail-tel {
+  outline: tomato solid 1px;
+  display: flex;
 }
 
 .link {
@@ -80,6 +135,7 @@ body {
 .link-tel,
 .link-mail {
   color: var(--basic-text);
+  outline: tomato solid 1px;
 }
 
 /* Подвал сайта */
